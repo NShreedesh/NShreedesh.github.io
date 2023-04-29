@@ -1,9 +1,9 @@
-import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-      <Footer />
+    <div className="absolute -translate-x-1/2 bottom-10 left-1/2">
+      <Navbar />
     </div>
   );
 }
