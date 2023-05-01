@@ -1,9 +1,13 @@
 import Navbar from "./components/Navbar/Navbar";
+import ScrollView from "./components/ScrollView/ScrollView";
 
 function App() {
   return (
-    <div className="absolute -translate-x-1/2 bottom-10 left-1/2">
-      <Navbar />
+    <div className="w-screen h-screen">
+      <div className="absolute -translate-x-1/2 bottom-10 left-1/2">
+        <Navbar />
+      </div>
+      <ScrollView />
     </div>
   );
 }
