@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { navbarDataType } from "../../Data/navbarData";
 import NavbarContext, { INavbar } from "../../context/NavbarContext";
+import ScrollContext, { IScroll } from "../../context/ScrollContext";
 
 interface INavbarItem extends navbarDataType {
   navbarItemIndex: number;
@@ -9,9 +10,15 @@ interface INavbarItem extends navbarDataType {
 function NavbarItem({ image, navbarItemIndex }: INavbarItem) {
   const { changeNavbarIndex, selctedNavItemIndex } =
     useContext<INavbar>(NavbarContext);
+  const { changeScrollValue } = useContext<IScroll>(ScrollContext);
 
   function isSelected(): boolean {
     return selctedNavItemIndex === navbarItemIndex;
+  }
+
+  function handleNavbarChange() {
+    changeNavbarIndex!(navbarItemIndex);
+    changeScrollValue?.(-100 * navbarItemIndex);
   }
 
   return (
@@ -22,7 +29,7 @@ function NavbarItem({ image, navbarItemIndex }: INavbarItem) {
           ? "scale-150"
           : "grayscale scale-100 hover:grayscale-0 opacity-80"
       }`}
-      onClick={() => changeNavbarIndex!(navbarItemIndex)}
+      onClick={() => handleNavbarChange()}
     >
       <img src={image} alt="" className="w-full h-full rounded-lg" />
     </div>

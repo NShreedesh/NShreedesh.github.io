@@ -6,7 +6,10 @@ function Home() {
 
   return (
     <div
-      className={`min-w-[100%] bg-slate-600 transition-all duration-500 translate-x-[-${scrollValue}vw]`}
+      className={"min-w-[100%] bg-slate-600 transition-all duration-500"}
+      style={{
+        translate: `${scrollValue}vw`,
+      }}
     >
       <p>Home</p>
     </div>

@@ -3,7 +3,7 @@ import Home from "../../Pages/Home";
 
 function ScrollView() {
   return (
-    <div className="flex h-full overflow-y-hidden">
+    <div className="flex h-full overflow-hidden">
       <Home />
       <About />
     </div>
