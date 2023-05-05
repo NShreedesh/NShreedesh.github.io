@@ -10,7 +10,7 @@ function About() {
         translate: `${scrollValue}vw`,
       }}
     >
-      <div className="flex flex-col gap-5 md:flex-row pt-28">
+      <div className="flex flex-col max-w-screen-lg gap-5 md:flex-row pt-36">
         <img
           className="rounded-md pointer-events-none w-80 h-80"
           src="https://avatars.githubusercontent.com/u/65639214?v=4"

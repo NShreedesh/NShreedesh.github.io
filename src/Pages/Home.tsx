@@ -14,7 +14,7 @@ function Home() {
         translate: `${scrollValue}vw`,
       }}
     >
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col max-w-screen-md gap-8">
         <p className="text-4xl font-bold text-center uppercase">
           Game Developer
         </p>
