@@ -5,12 +5,12 @@ function About() {
   const { scrollValue } = useContext<IScroll>(ScrollContext);
   return (
     <div
-      className="min-w-[100%] transition-all duration-500 flex justify-center"
+      className="min-w-[100%] transition-all duration-500 flex justify-center px-20"
       style={{
         translate: `${scrollValue}vw`,
       }}
     >
-      <div className="flex w-9/12 gap-5 pt-28">
+      <div className="flex gap-5 pt-28">
         <img
           className="rounded-md pointer-events-none w-80 h-80"
           src="https://avatars.githubusercontent.com/u/65639214?v=4"
@@ -18,14 +18,17 @@ function About() {
         <div className="flex flex-col gap-5">
           <p className="text-2xl font-bold uppercase">About Me</p>
           <p className="text-sm">
-            Hi there! My name is Shreedesh Niroula, and I'm a game developer
-            with 3 years of experience. I'm passionate about creating fun and
-            immersive gaming experiences that keep players engaged and coming
-            back for more. I specialize in developing games using popular game
-            engines such as Unity and I'm well-versed in programming languages
-            such as C# and typeScript. I'm always exploring new technologies and
-            techniques to improve my skills and take my game development
-            abilities to the next level.
+            discovered my passion for game development during my time in
+            college, where I majored in computer science. Since then, I've
+            worked on a variety of projects across different platforms,
+            including mobile, PC, and console games. I'm a creative problem
+            solver and love the challenge of bringing new and exciting ideas to
+            life. Skills and Expertise: Here are just a few of the skills and
+            expertise I bring to my work as a game developer: Proficient in
+            Unity and Unreal game engines Skilled in C#, C++, and other
+            programming languages Strong understanding of game mechanics and
+            systems Experience with mobile game development and optimization
+            Familiarity with VR and AR technologies
           </p>
         </div>
       </div>
