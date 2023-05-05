@@ -5,12 +5,12 @@ function About() {
   const { scrollValue } = useContext<IScroll>(ScrollContext);
   return (
     <div
-      className="min-w-[100%] transition-all duration-500 flex justify-center px-20"
+      className="min-w-[100%] transition-all duration-500 flex justify-center px-20 "
       style={{
         translate: `${scrollValue}vw`,
       }}
     >
-      <div className="flex gap-5 pt-28">
+      <div className="flex flex-col gap-5 md:flex-row pt-28">
         <img
           className="rounded-md pointer-events-none w-80 h-80"
           src="https://avatars.githubusercontent.com/u/65639214?v=4"
