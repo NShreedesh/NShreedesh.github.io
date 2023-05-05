@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { navbarDataType } from "../../Data/navbarData";
 import NavbarContext, { INavbar } from "../../context/NavbarContext";
 import ScrollContext, { IScroll } from "../../context/ScrollContext";
@@ -12,13 +12,16 @@ function NavbarItem({ image, navbarItemIndex }: INavbarItem) {
     useContext<INavbar>(NavbarContext);
   const { changeScrollValue } = useContext<IScroll>(ScrollContext);
 
+  useEffect(() => {
+    changeScrollValue?.(-100 * selctedNavItemIndex);
+  }, [selctedNavItemIndex]);
+
   function isSelected(): boolean {
     return selctedNavItemIndex === navbarItemIndex;
   }
 
   function handleNavbarChange() {
     changeNavbarIndex!(navbarItemIndex);
-    changeScrollValue?.(-100 * navbarItemIndex);
   }
 
   return (

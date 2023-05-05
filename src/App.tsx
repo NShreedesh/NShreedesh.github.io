@@ -1,3 +1,4 @@
+import ArrowView from "./components/ArrowView/ArrowView";
 import Navbar from "./components/Navbar/Navbar";
 import ScrollView from "./components/ScrollView/ScrollView";
 
@@ -7,6 +8,7 @@ function App() {
       <div className="absolute z-10 -translate-x-1/2 bottom-10 left-1/2">
         <Navbar />
       </div>
+      <ArrowView />
       <ScrollView />
     </div>
   );
