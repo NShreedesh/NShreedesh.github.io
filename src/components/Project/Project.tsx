@@ -11,8 +11,8 @@ export default function Project({ title, description, videoUrl }: IGame) {
         translate: `${scrollValue}vw`,
       }}
     >
-      <div className="flex gap-5">
-        <video autoPlay muted loop className="rounded-lg">
+      <div className="flex flex-col gap-5 md:flex-row">
+        <video autoPlay muted loop className="rounded-lg w-96 lg:w-[600px]">
           <source src={videoUrl} />
         </video>
         <div className="flex flex-col gap-3">
