@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import ScrollView from "./components/ScrollView/ScrollView";
 import { INavbar } from "./context/NavbarContext";
 import NavbarContext from "./context/NavbarContext";
+import RandomCircle from "./components/RandomCircle/RandomCircle";
 
 let dragStartPosition: number = 0;
 let dragEndPosition: number = 0;
@@ -45,6 +46,7 @@ function App() {
       <Navbar />
       <ArrowView />
       <ScrollView />
+      <RandomCircle />
     </div>
   );
 }
