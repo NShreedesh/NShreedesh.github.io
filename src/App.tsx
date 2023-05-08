@@ -46,7 +46,6 @@ function App() {
       <Navbar />
       <ArrowView />
       <ScrollView />
-      <RandomCircle />
     </div>
   );
 }

@@ -8,7 +8,18 @@ interface ICircle {
   maximumSize?: number;
 }
 
-const defaultColors = ["red", "green", "blue", "yellow", "pink"];
+const defaultColors = [
+  "red",
+  "green",
+  "blue",
+  "brown",
+  "pink",
+  "orange",
+  "yellow",
+  "purple",
+  "crimson",
+  "indigo",
+];
 
 function Circle({
   colors,
@@ -45,7 +56,7 @@ function Circle({
       setRandomCircleTop(randomCircleTop);
       setSize(Math.random() * maximumSize! || 30 + minimumSize! || 7);
     }, Math.floor(Math.random() * maximumCircleMoveTime! || 1000 + minimumCircleMoveTime! || 5000));
-  }, [randomCircleLeft]);
+  }, [randomCircleLeft, randomCircleTop]);
 
   return (
     <div
