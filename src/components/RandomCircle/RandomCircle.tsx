@@ -8,8 +8,8 @@ export default function RandomCircle() {
           <Circle
             minimumCircleMoveTime={5000}
             maximumCircleMoveTime={10000}
-            minimumSize={15}
-            maximumSize={25}
+            minimumSize={20}
+            maximumSize={50}
             key={index}
           />
         );

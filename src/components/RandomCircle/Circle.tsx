@@ -60,7 +60,7 @@ function Circle({
 
   return (
     <div
-      className="absolute duration-1000 top-10 left-10 -z-20"
+      className="absolute duration-[5s] top-10 left-10 -z-20"
       style={{
         left: `${randomCircleLeft}%`,
         top: `${randomCircleTop}%`,
@@ -68,7 +68,7 @@ function Circle({
       }}
     >
       <div
-        className="duration-1000 rounded-full opacity-60"
+        className="duration-1000 rounded-full opacity-20"
         style={{
           width: size,
           height: size,

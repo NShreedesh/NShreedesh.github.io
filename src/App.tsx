@@ -43,6 +43,7 @@ function App() {
       onMouseDown={(e) => handleMouseDown(e, true)}
       onMouseUp={(e) => handleMouseUp(e, false)}
     >
+      <RandomCircle />
       <Navbar />
       <ArrowView />
       <ScrollView />
