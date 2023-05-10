@@ -5,7 +5,7 @@ function About() {
   const { scrollValue } = useContext<IScroll>(ScrollContext);
   return (
     <div
-      className="min-w-[100%] transition-all duration-500 flex justify-center px-20 "
+      className="min-w-[100%] transition-all ease-in-out duration-500 flex justify-center px-20 "
       style={{
         translate: `${scrollValue}vw`,
       }}
