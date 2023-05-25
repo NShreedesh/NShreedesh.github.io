@@ -1,9 +1,16 @@
 import { NavLink } from "react-router-dom";
 import { navbarData } from "../data/navbardata";
+import { useNavbarContext } from "../context/NavbarContext";
 
-function Navbar() {
+function LeftNavbar() {
+  const { isNavbarActive } = useNavbarContext();
+
   return (
-    <div className="flex flex-col justify-center h-screen px-10 w-80 bg-slate-400 gap-14 dark:bg-black">
+    <div
+      className={`absolute lg:static flex-col justify-center flex h-screen px-10 transition-all linear duration-500 w-80 bg-slate-400 gap-14 dark:bg-black lg:visible ${
+        isNavbarActive ? "" : "-ml-80 lg:ml-0"
+      }`}
+    >
       <div className="flex flex-col gap-10">
         <h1 className="text-3xl font-extrabold tracking-wider">Nepal</h1>
 
@@ -36,4 +43,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default LeftNavbar;
