@@ -1,5 +1,5 @@
 function Home() {
-  return <div>Home</div>;
+  return <div className="w-full bg-slate-500"></div>;
 }
 
 export default Home;

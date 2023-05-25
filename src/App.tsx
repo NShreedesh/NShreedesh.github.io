@@ -5,11 +5,13 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import { Route, Routes } from "react-router-dom";
 import Services from "./pages/Services";
+import DarkModeToggle from "./components/DarkModeToggle";
 
 function App() {
   return (
-    <div className="flex px-10 light">
+    <div className="flex">
       <Navbar />
+      <DarkModeToggle />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

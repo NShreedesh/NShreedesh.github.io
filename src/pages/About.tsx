@@ -1,5 +1,5 @@
 function About() {
-  return <div>About</div>;
+  return <div className="w-full bg-slate-500">About</div>;
 }
 
 export default About;

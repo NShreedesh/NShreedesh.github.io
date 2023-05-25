@@ -1,5 +1,5 @@
 function Portfolio() {
-  return <div>Portfolio</div>;
+  return <div className="w-full bg-slate-500">Portfolio</div>;
 }
 
 export default Portfolio;
