@@ -3,13 +3,13 @@ import Typewriter from "typewriter-effect";
 
 function Home() {
   return (
-    <div className="flex items-center justify-center w-full h-screen text-center bg-gray-100 lg:text-start">
-      <div className="flex flex-col items-center max-w-xl gap-12 lg:flex-row lg:max-w-4xl">
-        <div>
+    <div className="flex items-center justify-center w-full h-screen text-center bg-gray-100 xl:text-start">
+      <div className="flex flex-col items-center max-w-xl gap-12 xl:flex-row xl:max-w-4xl">
+        <div className="flex-shrink-0 ">
           <img
             src="/images/Profile.jpg"
             alt="Profile Image"
-            className="h-80 w-80 object-cover object-[0px,-40px] bg-red-400 rounded-full"
+            className="h-72 w-72 object-cover object-[0px,-40px] bg-red-400 rounded-full"
           />
         </div>
 
@@ -31,7 +31,7 @@ function Home() {
             Creative Programmer based in Nepal and happy to travel all over
             Nepal to Program games.
           </p>
-          <div className="flex items-center justify-center gap-3 text-lg lg:justify-start">
+          <div className="flex items-center justify-center gap-3 text-lg xl:justify-start">
             {homeIconsData.map((data, index) => {
               return (
                 <div

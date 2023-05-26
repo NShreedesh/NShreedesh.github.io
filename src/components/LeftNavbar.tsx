@@ -7,8 +7,8 @@ function LeftNavbar() {
 
   return (
     <div
-      className={`absolute lg:static bg-white flex-col justify-center flex h-screen px-10 transition-[margin] ease-linear duration-500 w-80 gap-14 dark:bg-black lg:visible ${
-        isNavbarActive ? "" : "-ml-80 lg:ml-0"
+      className={`absolute xl:static bg-white flex-col justify-center flex h-screen px-10 transition-[margin] ease-linear duration-500 w-80 gap-14 dark:bg-black xl:visible ${
+        isNavbarActive ? "" : "-ml-80 xl:ml-0"
       }`}
     >
       <div className="flex flex-col gap-10">

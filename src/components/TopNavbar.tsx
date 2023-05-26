@@ -6,7 +6,7 @@ function TopNavbar() {
   const { isNavbarActive, toggleNavbarState } = useNavbarContext();
 
   return (
-    <div className="fixed flex items-center gap-4 text-xl cursor-pointer right-5 top-5 lg:hidden">
+    <div className="fixed flex items-center gap-4 text-xl cursor-pointer right-5 top-5 xl:hidden">
       <div>
         <MdDarkMode />
       </div>
