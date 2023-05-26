@@ -44,7 +44,7 @@ export default {
 
       animation: {
         blob: "blob 60s ease-in-out infinite",
-        page: "page .8s ease-in-out forwards",
+        page: "page .6s ease-in-out forwards",
       },
     },
   },
