@@ -1,6 +1,8 @@
+import { skillIconsData } from "../data/skillIcons";
+
 function About() {
   return (
-    <div className="flex justify-center w-full h-screen text-center bg-light xl:text-start dark:bg-dark [transition:background-color_.3s,color_.3s]">
+    <div className="flex justify-center w-full min-h-screen text-center bg-light xl:text-start dark:bg-dark [transition:background-color_.3s,color_.3s]">
       <div className="flex flex-col max-w-xl gap-10 mt-16 xl:max-w-4xl animate-page">
         <div className="flex flex-col gap-2">
           <p className="bg-[#EEEEEE] w-fit p-2">About</p>
@@ -31,6 +33,11 @@ function About() {
         </button>
         <div>
           <p>Skills</p>
+          <div className="flex items-center gap-3 text-6xl">
+            {skillIconsData.map((data, index) => {
+              return <div key={index}>{data.icon}</div>;
+            })}
+          </div>
         </div>
         <div>
           <p>Education</p>

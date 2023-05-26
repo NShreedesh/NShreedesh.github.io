@@ -1,8 +1,8 @@
 import { FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
 
-import IHomeIcons from "../interfaces/IHomeIcons";
+import IIcons from "../interfaces/IHomeIcons";
 
-export const homeIconsData: IHomeIcons[] = [
+export const homeIconsData: IIcons[] = [
   {
     icon: <FaFacebookF />,
   },
