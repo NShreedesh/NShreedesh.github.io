@@ -7,12 +7,12 @@ function LeftNavbar() {
 
   return (
     <div
-      className={`absolute lg:static flex-col justify-center flex h-screen px-10 transition-all linear duration-500 w-80 bg-slate-400 gap-14 dark:bg-black lg:visible ${
+      className={`absolute lg:static flex-col justify-center flex h-screen px-10 transition-[margin] ease-linear duration-500 w-80 gap-14 dark:bg-black lg:visible ${
         isNavbarActive ? "" : "-ml-80 lg:ml-0"
       }`}
     >
       <div className="flex flex-col gap-10">
-        <h1 className="text-3xl font-extrabold tracking-wider">Nepal</h1>
+        <h1 className="text-3xl font-extrabold tracking-widest">Nepal</h1>
 
         <div className="flex flex-col justify-center gap-5">
           {navbarData.map((data, index) => {
@@ -20,7 +20,7 @@ function LeftNavbar() {
               <NavLink
                 to={data.to}
                 key={index}
-                className="text-gray-600 aria-[current=page]:font-medium aria-[current=page]:text-black flex items-center gap-2 hover:tracking-widest transition-all duration-200"
+                className="text-gray-600 aria-[current=page]:font-medium aria-[current=page]:text-black flex items-center gap-2 hover:tracking-widest transition-all duration-200 tracking-wide"
               >
                 {data.icon}
                 <h1>{data.title}</h1>

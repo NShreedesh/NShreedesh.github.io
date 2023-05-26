@@ -8,7 +8,7 @@ const NavbarContext = createContext<INavbar>({
 export const useNavbarContext = () => useContext(NavbarContext);
 
 const NavbarContextProvider = ({ children }: { children: JSX.Element }) => {
-  const [isNavbarActive, setIsNavbarActive] = useState(true);
+  const [isNavbarActive, setIsNavbarActive] = useState(false);
 
   function toggleNavbarState(isNavbarActive: boolean) {
     setIsNavbarActive(isNavbarActive);
