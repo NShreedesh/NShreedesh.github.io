@@ -1,7 +1,8 @@
 import { MdDarkMode } from "react-icons/md";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { useNavbarContext } from "../context/NavbarContext";
 import { useDarkModeContext } from "../context/DarkModeContext";
+
+const hamburgerLineCss = `h-1 w-6 rounded-full bg-black transition duration-[.5s] ease transform duration-300 dark:bg-white`;
 
 function TopNavbar() {
   const { isNavbarActive, toggleNavbarState } = useNavbarContext();
@@ -17,7 +18,24 @@ function TopNavbar() {
           toggleNavbarState?.(!isNavbarActive);
         }}
       >
-        <GiHamburgerMenu />
+        <div
+          className="flex flex-col items-center justify-center w-10 h-10 gap-1"
+          onClick={() => toggleNavbarState?.(!isNavbarActive)}
+        >
+          <div
+            className={`${hamburgerLineCss} ${
+              isNavbarActive && "rotate-45 translate-y-2"
+            }`}
+          ></div>
+          <div
+            className={`${hamburgerLineCss} ${isNavbarActive && "opacity-0"}`}
+          ></div>
+          <div
+            className={`${hamburgerLineCss} ${
+              isNavbarActive && "-rotate-45 -translate-y-2"
+            }`}
+          ></div>
+        </div>
       </div>
     </div>
   );

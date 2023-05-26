@@ -1,5 +1,5 @@
 function About() {
-  return <div className="w-full h-screen bg-slate-500">About</div>;
+  return <div className="w-full h-screen bg-light dark:bg-dark">About</div>;
 }
 
 export default About;

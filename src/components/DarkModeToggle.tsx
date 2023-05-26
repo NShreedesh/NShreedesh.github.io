@@ -6,7 +6,7 @@ function DarkModeToggle() {
 
   return (
     <div
-      className="absolute right-0 items-center justify-center hidden h-12 text-2xl bg-gray-400 cursor-pointer w-14 rounded-s-full -h-1/2 top-1/2 xl:flex [transition:background-color_.3s,color_.3s] dark:text-white dark:bg-gray-700"
+      className="absolute right-0 items-center justify-center hidden h-12 text-2xl bg-gray-400 cursor-pointer w-14 rounded-s-full -h-1/2 top-1/2 xl:flex [transition:background-color_.3s,color_.3s] dark:text-white dark:bg-gray-700 z-10"
       onClick={() => toggleDarkModeActive!(!isDarkModeActive)}
     >
       <MdDarkMode />
