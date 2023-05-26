@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 function Home() {
   return (
-    <div className="flex items-center justify-center w-full h-screen text-center bg-gray-100 xl:text-start">
+    <div className="flex items-center justify-center w-full h-screen text-center bg-gray-100 xl:text-start dark:bg-[#111111] transition-[background-color,color]">
       <div className="flex flex-col items-center max-w-xl gap-12 xl:flex-row xl:max-w-4xl">
         <div className="flex-shrink-0 ">
           <img
@@ -13,12 +13,12 @@ function Home() {
           />
         </div>
 
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 dark:text-white">
           <p className="text-5xl font-extrabold uppercase whitespace-nowrap">
             Shreedesh Niroula
           </p>
 
-          <p className="text-2xl font-medium">
+          <div className="text-2xl font-medium">
             <Typewriter
               options={{
                 strings: ["Game Developer", "Programmer"],
@@ -26,8 +26,9 @@ function Home() {
                 loop: true,
               }}
             />
-          </p>
-          <p className="font-medium text-gray-500 text-md">
+          </div>
+
+          <p className="font-medium text-gray-500 dark:text-gray-400 text-md">
             Creative Programmer based in Nepal and happy to travel all over
             Nepal to Program games.
           </p>

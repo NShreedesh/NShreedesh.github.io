@@ -1,5 +1,5 @@
 function Contact() {
-  return <div className="w-full bg-slate-500">Contact</div>;
+  return <div className="w-full h-screen bg-slate-500">Contact</div>;
 }
 
 export default Contact;

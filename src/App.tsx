@@ -8,11 +8,14 @@ import Services from "./pages/Services";
 import DarkModeToggle from "./components/DarkModeToggle";
 import TopNavbar from "./components/TopNavbar";
 import NavbarContextProvider from "./context/NavbarContext";
+import { useDarkModeContext } from "./context/DarkModeContext";
 
 function App() {
+  const { isDarkModeActive } = useDarkModeContext();
+
   return (
     <NavbarContextProvider>
-      <div className="flex">
+      <div className={`flex ${isDarkModeActive && "dark"}`}>
         <LeftNavbar />
         <TopNavbar />
         <DarkModeToggle />
