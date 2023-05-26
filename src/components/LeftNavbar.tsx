@@ -7,7 +7,7 @@ function LeftNavbar() {
 
   return (
     <div
-      className={`absolute xl:static bg-white flex-col justify-center flex h-screen px-10 transition-[margin,background-color,color] ease-linear duration-500 w-80 gap-14 dark:bg-black xl:visible ${
+      className={`absolute flex-shrink-0 xl:static bg-white flex-col justify-center flex h-screen px-10 [transition:margin_.7s,background-color_.3s,color_.3s] linear w-72 gap-14 dark:bg-black z-20 xl:visible ${
         isNavbarActive ? "" : "-ml-80 xl:ml-0"
       }`}
     >

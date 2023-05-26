@@ -8,7 +8,7 @@ function TopNavbar() {
   const { isDarkModeActive, toggleDarkModeActive } = useDarkModeContext();
 
   return (
-    <div className="fixed flex items-center gap-4 text-xl cursor-pointer right-5 top-5 xl:hidden">
+    <div className="fixed flex items-center gap-4 text-xl cursor-pointer right-5 top-5 xl:hidden [transition:background-color_.3s,color_.3s] dark:text-white">
       <div onClick={() => toggleDarkModeActive!(!isDarkModeActive)}>
         <MdDarkMode />
       </div>
