@@ -9,7 +9,7 @@ function Home() {
           <img
             src="/images/Profile.jpg"
             alt="Profile Image"
-            className="h-72 w-72 object-cover object-[0px,-40px] bg-red-400 rounded-full"
+            className="h-72 w-72 object-cover object-[0px,-40px] bg-red-400 rounded-full animate-blob border-8 border-gray-500"
           />
         </div>
 
