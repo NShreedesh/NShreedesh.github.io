@@ -28,10 +28,16 @@ function About() {
           </div>
           <hr className="h-[1px] bg-gray-400" />
           <p className="text-sm text-gray-500 dark:text-gray-300 dark:opacity-80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In cumque
-            impedit praesentium officia deleniti nam, dolorum enim alias
-            voluptates consequuntur qui vel repudiandae odio natus recusandae
-            incidunt, error quae dolor!
+            As a Unity game developer with a focus on C# programming, I bring a
+            combination of technical skills and creativity to the table. I have
+            a passion for creating engaging and immersive games that provide
+            players with a unique experience. With my expertise in Unity and
+            proficiency in C#, I have developed a variety of games across
+            multiple platforms. My attention to detail and ability to work
+            collaboratively with other developers and artists make me a valuable
+            member of any game development team. I am constantly seeking new
+            opportunities to challenge myself and bring new and innovative ideas
+            to life in my games.
           </p>
           <hr className="h-[1px] bg-gray-400" />
         </div>
