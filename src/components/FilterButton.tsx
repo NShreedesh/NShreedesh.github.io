@@ -1,11 +1,4 @@
-import { ProjectFilter } from "../enums/ProjectFilter";
-
-interface IFilter {
-  filter: ProjectFilter;
-  appliedFilter: ProjectFilter;
-  title: string;
-  updateFilter: (filter: ProjectFilter) => void;
-}
+import IFilter from "../interfaces/IFilter";
 
 function FilterButton({ filter, appliedFilter, title, updateFilter }: IFilter) {
   return (
