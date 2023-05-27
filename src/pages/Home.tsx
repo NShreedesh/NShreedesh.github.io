@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 function Home() {
   return (
-    <div className="flex items-center justify-center w-full h-screen text-center bg-light xl:text-start dark:bg-dark [transition:background-color_.3s,color_.3s]">
+    <div className="flex m-navMargin items-center justify-center w-full h-screen text-center bg-light xl:text-start dark:bg-dark [transition:background-color_.3s,color_.3s]">
       <div className="flex flex-col items-center max-w-xl gap-12 xl:flex-row xl:max-w-4xl animate-page xl:ml-80 ">
         <div className="flex-shrink-0 ">
           <img

@@ -6,18 +6,18 @@ import IIcons from "../interfaces/IHomeIcons";
 
 export const skillIconsData: IIcons[] = [
   {
-    icon: <SiUnity style={{ color: "black" }} />,
+    icon: <SiUnity className="text-black dark:text-white" />,
   },
   {
-    icon: <SiCsharp style={{ color: "green" }} />,
+    icon: <SiCsharp className="text-green-500" />,
   },
   {
-    icon: <AiFillHtml5 style={{ color: "red" }} />,
+    icon: <AiFillHtml5 className="text-red-500" />,
   },
   {
-    icon: <DiCss3 style={{ color: "#007ACC" }} />,
+    icon: <DiCss3 className="text-[#007ACC]" />,
   },
   {
-    icon: <SiTypescript style={{ color: "#007ACC" }} />,
+    icon: <SiTypescript className="text-[#007ACC]" />,
   },
 ];
