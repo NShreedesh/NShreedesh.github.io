@@ -15,9 +15,9 @@ export const skillIconsData: IIcons[] = [
     icon: <AiFillHtml5 className="text-red-500" />,
   },
   {
-    icon: <DiCss3 className="text-[#007ACC]" />,
+    icon: <DiCss3 className="text-[#2aaaff]" />,
   },
   {
-    icon: <SiTypescript className="text-[#007ACC]" />,
+    icon: <SiTypescript className="text-[#1fa5ff]" />,
   },
 ];

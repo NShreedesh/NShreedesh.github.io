@@ -15,17 +15,17 @@ export const navbarData: INavbarData[] = [
   {
     icon: <BsFillPersonFill />,
     title: "About",
-    to: "about",
+    to: "/about",
   },
   {
     icon: <MdHomeRepairService />,
-    title: "Services",
-    to: "services",
+    title: "CV",
+    to: "/cv",
   },
   {
     icon: <FaPortrait />,
-    title: "Portfolio",
-    to: "/portfolio",
+    title: "Projects",
+    to: "/projects",
   },
   {
     icon: <IoMdMail />,
