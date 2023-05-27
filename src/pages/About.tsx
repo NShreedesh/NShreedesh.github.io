@@ -36,9 +36,13 @@ function About() {
           <hr className="h-[2px] bg-gray-300" />
         </div>
 
-        <button className="px-10 py-4 font-medium text-white transition-all duration-200 ease-linear bg-black w-fit hover:tracking-wider dark:bg-white dark:text-black">
+        <a
+          className="px-10 py-4 font-medium text-white transition-all duration-200 ease-linear bg-black cursor-pointer w-fit hover:tracking-wider dark:bg-white dark:text-black"
+          download
+          href="/resume/MyResume.pdf"
+        >
           Download CV
-        </button>
+        </a>
         <div className="flex flex-col gap-2">
           <p className="text-lg font-bold dark:text-white">Skills</p>
           <div className="flex items-center gap-3 text-4xl">
@@ -47,7 +51,7 @@ function About() {
             })}
           </div>
         </div>
-        <div>
+        <div className="flex flex-col gap-2">
           <p className="text-lg font-bold dark:text-white">Education</p>
           <div className="relative flex flex-col gap-3">
             <div className="absolute w-[2px] h-full translate-x-[6.5px] bg-gray-500"></div>

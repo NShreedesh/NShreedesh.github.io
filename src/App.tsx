@@ -13,6 +13,8 @@ import { useDarkModeContext } from "./context/DarkModeContext";
 function App() {
   const { isDarkModeActive } = useDarkModeContext();
 
+  console.log(isDarkModeActive);
+
   return (
     <NavbarContextProvider>
       <div className={`flex ${isDarkModeActive && "dark"}`}>
