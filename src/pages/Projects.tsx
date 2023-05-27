@@ -2,6 +2,7 @@ import { useState } from "react";
 import { projectsData } from "../data/videoData";
 import { AiFillGithub } from "react-icons/ai";
 import { ProjectFilter } from "../enums/ProjectFilter";
+import FilterButton from "../components/FilterButton";
 
 function Projects() {
   const [filter, setFilter] = useState<ProjectFilter>(ProjectFilter.All);
@@ -25,18 +26,30 @@ function Projects() {
                 </p>
               </div>
               <div className="flex items-center gap-5 dark:text-white">
-                <button onClick={() => updateFilter(ProjectFilter.All)}>
-                  All
-                </button>
-                <button onClick={() => updateFilter(ProjectFilter.Game)}>
-                  Game
-                </button>
-                <button onClick={() => updateFilter(ProjectFilter.Web)}>
-                  Web
-                </button>
-                <button onClick={() => updateFilter(ProjectFilter.App)}>
-                  App
-                </button>
+                <FilterButton
+                  appliedFilter={filter}
+                  filter={ProjectFilter.All}
+                  title="All"
+                  updateFilter={updateFilter}
+                />
+                <FilterButton
+                  appliedFilter={filter}
+                  filter={ProjectFilter.Game}
+                  title="Game"
+                  updateFilter={updateFilter}
+                />
+                <FilterButton
+                  appliedFilter={filter}
+                  filter={ProjectFilter.App}
+                  title="App"
+                  updateFilter={updateFilter}
+                />
+                <FilterButton
+                  appliedFilter={filter}
+                  filter={ProjectFilter.Web}
+                  title="Web"
+                  updateFilter={updateFilter}
+                />
               </div>
             </div>
 
