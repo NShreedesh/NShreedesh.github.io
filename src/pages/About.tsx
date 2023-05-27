@@ -1,9 +1,11 @@
+import LineDetails from "../components/LineDetails";
+import { educationData } from "../data/eductionData";
 import { skillIconsData } from "../data/skillIcons";
 
 function About() {
   return (
-    <div className="flexjustify-center w-full min-h-screen bg-light xl:text-start dark:bg-dark [transition:background-color_.3s,color_.3s]">
-      <div className="flex flex-col gap-10 px-5 mt-16 xl:max-w-4xl animate-page xl:px-0 xl:ml-80">
+    <div className="flexjustify-center w-full min-h-screen bg-light xl:text-start dark:bg-dark [transition:background-color_.3s,color_.3s] ">
+      <div className="flex flex-col gap-10 px-5 pt-24 pb-10 xl:max-w-4xl animate-page xl:px-0 xl:ml-80">
         <div className="flex flex-col gap-2">
           <p className="bg-[#EEEEEE] dark:bg-[#242424] w-fit px-5 py-2 dark:text-white font-semibold">
             About
@@ -34,7 +36,7 @@ function About() {
           <hr className="h-[2px] bg-gray-300" />
         </div>
 
-        <button className="px-10 py-4 text-white transition-all duration-200 ease-linear bg-black w-fit hover:tracking-wider dark:bg-white dark:text-black">
+        <button className="px-10 py-4 font-medium text-white transition-all duration-200 ease-linear bg-black w-fit hover:tracking-wider dark:bg-white dark:text-black">
           Download CV
         </button>
         <div className="flex flex-col gap-2">
@@ -47,6 +49,19 @@ function About() {
         </div>
         <div>
           <p className="text-lg font-bold dark:text-white">Education</p>
+          <div className="relative flex flex-col gap-3">
+            <div className="absolute w-[2px] h-full translate-x-[6.5px] bg-gray-500"></div>
+            {educationData.map((data, index) => {
+              return (
+                <LineDetails
+                  key={index}
+                  timeline={data.timeline}
+                  title={data.title}
+                  subtitle={data.subtitle}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
