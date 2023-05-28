@@ -3,8 +3,8 @@ import IFilter from "../interfaces/IFilter";
 function FilterButton({ filter, appliedFilter, title, updateFilter }: IFilter) {
   return (
     <button
-      className={`opacity-60 hover:opacity-100 ${
-        filter === appliedFilter && "opacity-100"
+      className={`hover:opacity-90 ${
+        filter === appliedFilter ? "opacity-100" : "opacity-60"
       }`}
       onClick={() => updateFilter(filter)}
     >

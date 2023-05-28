@@ -3,6 +3,7 @@ import { projectsData } from "../data/videoData";
 import { AiFillGithub } from "react-icons/ai";
 import { ProjectFilter } from "../enums/ProjectFilter";
 import FilterButton from "../components/FilterButton";
+import ProjectVideo from "../components/ProjectVideo";
 
 function Projects() {
   const [filter, setFilter] = useState<ProjectFilter>(ProjectFilter.All);
@@ -75,12 +76,7 @@ function Projects() {
                             </a>
                           )}
                         </div>
-                        <iframe
-                          className="w-full h-full bg-black"
-                          src={data.youtubeLink}
-                          title={data.title}
-                          allowFullScreen={true}
-                        ></iframe>
+                        <ProjectVideo data={data} />
                       </div>
                     )
                   );
