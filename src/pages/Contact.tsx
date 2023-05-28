@@ -1,45 +1,45 @@
-import { useEffect } from "react";
-
 function Contact() {
   return (
-    <div className="flex w-full min-h-screen bg-light xl:text-start dark:bg-dark [transition:background-color_.3s,color_.3s] ">
+    <div className="flex w-full justify-center min-h-screen bg-light xl:text-start dark:bg-dark [transition:background-color_.3s,color_.3s] ">
       <div className="flex flex-col w-full gap-10 px-5 pt-24 pb-10 xl:max-w-4xl animate-page xl:px-0 xl:ml-80">
         <div className="flex flex-col gap-2">
           <p className="bg-[#EEEEEE] dark:bg-[#242424] w-fit px-5 py-2 dark:text-white font-semibold">
             Contact
           </p>
-          <p className="text-3xl font-extrabold dark:text-white">
-            Get in Touch
-          </p>
           <div className="flex flex-col gap-16">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1279527.8201538483!2d85.1857700955106!3d27.648364743802844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1685295569567!5m2!1sen!2snp"
-              loading="lazy"
-              className="w-full h-96"
-            ></iframe>
+            <p className="text-3xl font-extrabold dark:text-white">
+              Get in Touch
+            </p>
+            <div className="flex flex-col gap-16">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1279527.8201538483!2d85.1857700955106!3d27.648364743802844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1685295569567!5m2!1sen!2snp"
+                loading="lazy"
+                className="w-full h-96"
+              ></iframe>
 
-            <form className="flex flex-col w-full gap-8">
-              <input
-                type="text"
-                placeholder="Name"
-                className="p-2 bg-transparent border border-gray-400 outline-gray-600 dark:text-white"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="p-2 bg-transparent border border-gray-400 dark:text-white fill-none"
-              />
-              <textarea
-                placeholder="Message"
-                className="p-2 bg-transparent border border-gray-400 resize-none h-28 dark:text-white"
-              />
-              <button
-                type="submit"
-                className="px-5 py-3 font-medium text-white transition-all duration-200 ease-linear bg-black cursor-pointer w-fit hover:tracking-wider dark:bg-white dark:text-black"
-              >
-                Send Message
-              </button>
-            </form>
+              <form className="flex flex-col w-full gap-8">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="p-2 bg-transparent border border-gray-400 outline-gray-600 dark:text-white"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="p-2 bg-transparent border border-gray-400 dark:text-white fill-none"
+                />
+                <textarea
+                  placeholder="Message"
+                  className="p-2 bg-transparent border border-gray-400 resize-none h-28 dark:text-white"
+                />
+                <button
+                  type="submit"
+                  className="px-5 py-3 font-medium text-white transition-all duration-200 ease-linear bg-black cursor-pointer w-fit hover:tracking-wider dark:bg-white dark:text-black"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
