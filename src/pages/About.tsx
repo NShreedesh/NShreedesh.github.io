@@ -4,7 +4,7 @@ import { skillIconsData } from "../data/skillIcons";
 
 function About() {
   return (
-    <div className="flex w-full min-h-screen bg-light xl:text-start dark:bg-dark [transition:background-color_.3s,color_.3s] ">
+    <div className="flex w-full xl:justify-center min-h-screen bg-light xl:text-start dark:bg-dark [transition:background-color_.3s,color_.3s] ">
       <div className="flex flex-col gap-10 px-5 pt-24 pb-10 xl:max-w-4xl animate-page xl:px-0 xl:ml-80">
         <div className="flex flex-col gap-2">
           <p className="bg-[#EEEEEE] dark:bg-[#242424] w-fit px-5 py-2 dark:text-white font-semibold">
