@@ -1,6 +1,5 @@
 import { AiFillHome } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
-import { MdHomeRepairService } from "react-icons/md";
 import { FaPortrait } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 

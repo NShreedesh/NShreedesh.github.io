@@ -10,7 +10,7 @@ import {
   SiSass,
   SiMysql,
 } from "react-icons/si";
-import { DiCss3, DiReact, DiNodejs, DiDotnet, DiMongodb } from "react-icons/di";
+import { DiCss3, DiReact, DiNodejs, DiMongodb } from "react-icons/di";
 
 import IIcons from "../interfaces/IHomeIcons";
 
