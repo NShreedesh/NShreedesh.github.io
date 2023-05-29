@@ -13,7 +13,7 @@ function LeftNavbar() {
     >
       <div className="flex flex-col gap-10">
         <h1 className="text-3xl font-extrabold tracking-widest cursor-pointer dark:text-white">
-          Nepal
+          Portfolio
         </h1>
 
         <div className="flex flex-col justify-center gap-5">
