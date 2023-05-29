@@ -51,7 +51,7 @@ function About() {
         </a>
         <div className="flex flex-col gap-2">
           <p className="text-lg font-bold dark:text-white">Skills</p>
-          <div className="flex items-center gap-3 text-4xl">
+          <div className="flex flex-wrap items-center gap-3 text-4xl">
             {skillIconsData.map((data, index) => {
               return <div key={index}>{data.icon}</div>;
             })}

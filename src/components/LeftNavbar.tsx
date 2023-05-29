@@ -3,7 +3,11 @@ import { navbarData } from "../data/navbardata";
 import { useNavbarContext } from "../context/NavbarContext";
 
 function LeftNavbar() {
-  const { isNavbarActive } = useNavbarContext();
+  const { isNavbarActive, toggleNavbarState } = useNavbarContext();
+
+  function onNavLinkClicked(): void {
+    toggleNavbarState?.(false);
+  }
 
   return (
     <div
@@ -22,6 +26,7 @@ function LeftNavbar() {
               <NavLink
                 to={data.to}
                 key={index}
+                onClick={onNavLinkClicked}
                 className="text-gray-600 dark:text-gray-400 aria-[current=page]:font-medium aria-[current=page]:text-black dark:aria-[current=page]:text-white flex items-center gap-2 hover:tracking-widest transition-all duration-200 tracking-wide"
               >
                 {data.icon}
