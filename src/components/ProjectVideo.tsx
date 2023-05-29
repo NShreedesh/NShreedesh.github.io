@@ -11,7 +11,7 @@ function ProjectVideo({ data }: { data: IProjectData }) {
         <iframe
           loading="lazy"
           className="w-full h-full bg-black"
-          src={`https://www.youtube.com/embed/${data.youtubeId}?&Volume=50&autoplay=true`}
+          src={`https://www.youtube.com/embed/${data.youtubeId}?&mute=1&autoplay=true`}
           title={data.title}
           allowFullScreen={true}
         ></iframe>
