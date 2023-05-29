@@ -56,9 +56,9 @@ function Contact() {
                   required
                   className="p-2 bg-transparent border border-gray-400 resize-none h-28 dark:text-white"
                   onChange={(e) =>
-                    setmailTo({ ...mailTo, body: e.target.value })
+                    setmailTo({ ...mailTo, message: e.target.value })
                   }
-                  value={mailTo.body}
+                  value={mailTo.message}
                 />
                 <input
                   type="submit"
