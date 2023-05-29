@@ -35,12 +35,14 @@ function Home() {
           <div className="flex items-center justify-center gap-3 text-md xl:justify-start">
             {homeIconsData.map((data, index) => {
               return (
-                <div
+                <a
                   key={index}
                   className="transition-transform duration-500 ease-out cursor-pointer hover:-translate-y-1 hover:opacity-70"
+                  href={data.link}
+                  target="_blank"
                 >
                   {data.icon}
-                </div>
+                </a>
               );
             })}
           </div>

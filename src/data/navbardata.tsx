@@ -18,11 +18,6 @@ export const navbarData: INavbarData[] = [
     to: "/about",
   },
   {
-    icon: <MdHomeRepairService />,
-    title: "CV",
-    to: "/cv",
-  },
-  {
     icon: <FaPortrait />,
     title: "Projects",
     to: "/projects",
