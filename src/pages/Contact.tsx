@@ -14,7 +14,7 @@ function Contact() {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1279527.8201538483!2d85.1857700955106!3d27.648364743802844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1685295569567!5m2!1sen!2snp"
                 loading="lazy"
-                className="w-full h-96"
+                className="w-full bg-black h-96"
               ></iframe>
 
               <form className="flex flex-col w-full gap-8">
@@ -32,12 +32,13 @@ function Contact() {
                   placeholder="Message"
                   className="p-2 bg-transparent border border-gray-400 resize-none h-28 dark:text-white"
                 />
-                <button
+                <a
                   type="submit"
                   className="px-5 py-3 font-medium text-white transition-all duration-200 ease-linear bg-black cursor-pointer w-fit hover:tracking-wider dark:bg-white dark:text-black"
+                  href="mailto:nshreedesh@gmail.com?subject=Business&body=Hello World"
                 >
                   Send Message
-                </button>
+                </a>
               </form>
             </div>
           </div>

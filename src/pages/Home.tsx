@@ -29,8 +29,8 @@ function Home() {
           </div>
 
           <p className="font-medium text-gray-500 dark:text-gray-400 text-md">
-            Creative Programmer based in Nepal and happy to travel all over
-            Nepal to Program games.
+            Nepalese game programmer crafting captivating experiences through
+            innovative code and engaging gameplay.
           </p>
           <div className="flex items-center justify-center gap-3 text-md xl:justify-start">
             {homeIconsData.map((data, index) => {
