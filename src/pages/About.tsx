@@ -45,7 +45,7 @@ function About() {
         <a
           className="px-5 py-3 font-medium text-white transition-all duration-200 ease-linear bg-black cursor-pointer w-fit hover:tracking-wider dark:bg-white dark:text-black"
           download
-          href="/resume/MyResume.pdf"
+          href="/resume/My Resume.pdf"
         >
           Download CV
         </a>
