@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import { Route, Routes } from "react-router-dom";
 import Cv from "./pages/Cv";
+import Error from "./pages/Error";
 import DarkModeToggle from "./components/DarkModeToggle";
 import TopNavbar from "./components/TopNavbar";
 import NavbarContextProvider from "./context/NavbarContext";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/cv" element={<Cv />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </div>
     </NavbarContextProvider>
