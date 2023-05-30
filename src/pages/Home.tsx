@@ -7,7 +7,7 @@ function Home() {
       <div className="flex flex-col items-center max-w-xl gap-12 xl:flex-row xl:max-w-4xl animate-page xl:ml-80 ">
         <div className="flex-shrink-0 ">
           <img
-            src="/images/Profile.jpg"
+            src="/images/profile1.jpg"
             alt="Profile Image"
             className="h-72 w-72 object-cover object-[0px,-40px] rounded-full animate-blob border-8 border-gray-500 border-opacity-30"
           />

@@ -14,9 +14,9 @@ function About() {
         </div>
         <div className="flex flex-col gap-6">
           <img
-            src="/images/wallpaper.jpg"
+            src="/images/profile2.png"
             alt="AboutMeImage"
-            className="w-full max-w-4xl"
+            className="w-full max-w-4xl bg-black object-[0px]"
           />
           <div className="flex flex-col gap-1">
             <p className="text-xl font-bold dark:text-white">
