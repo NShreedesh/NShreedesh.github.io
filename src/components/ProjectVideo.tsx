@@ -2,12 +2,22 @@ import { useState } from "react";
 import IProjectData from "../interfaces/IProjectData";
 import { AiFillYoutube } from "react-icons/ai";
 
-function ProjectVideo({ data }: { data: IProjectData }) {
+function ProjectVideo({
+  data,
+  updatePlayingVideoIndex,
+  playingVideoIndex,
+  videoIndex,
+}: {
+  data: IProjectData;
+  updatePlayingVideoIndex(index: number): void;
+  playingVideoIndex: number;
+  videoIndex: number;
+}) {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
   return (
     <div className="w-full bg-black h-[90%]">
-      {isLoaded ? (
+      {isLoaded && playingVideoIndex === videoIndex ? (
         <iframe
           loading="lazy"
           className="w-full h-full bg-black"
@@ -18,7 +28,10 @@ function ProjectVideo({ data }: { data: IProjectData }) {
       ) : (
         <div
           className="relative flex items-center justify-center w-full h-full cursor-pointer"
-          onClick={() => setIsLoaded(true)}
+          onClick={() => {
+            setIsLoaded(true);
+            updatePlayingVideoIndex(videoIndex);
+          }}
         >
           <img
             loading="lazy"

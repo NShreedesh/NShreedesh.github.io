@@ -7,9 +7,14 @@ import ProjectVideo from "../components/ProjectVideo";
 
 function Projects() {
   const [filter, setFilter] = useState<ProjectFilter>(ProjectFilter.All);
+  const [playingVideoIndex, setPlayingVideoIndex] = useState<number>(-1);
 
   function updateFilter(updatedFilter: ProjectFilter): void {
     setFilter(updatedFilter);
+  }
+
+  function updatePlayingVideoIndex(index: number): void {
+    setPlayingVideoIndex(index);
   }
 
   return (
@@ -76,7 +81,12 @@ function Projects() {
                             </a>
                           )}
                         </div>
-                        <ProjectVideo data={data} />
+                        <ProjectVideo
+                          data={data}
+                          updatePlayingVideoIndex={updatePlayingVideoIndex}
+                          videoIndex={index}
+                          playingVideoIndex={playingVideoIndex}
+                        />
                       </div>
                     )
                   );
