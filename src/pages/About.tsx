@@ -53,7 +53,14 @@ function About() {
           <p className="text-lg font-bold dark:text-white">Skills</p>
           <div className="flex flex-wrap items-center gap-3 text-4xl">
             {skillIconsData.map((data, index) => {
-              return <div key={index}>{data.icon}</div>;
+              return (
+                <div
+                  key={index}
+                  className="transition-transform cursor-pointer hover:-translate-y-2"
+                >
+                  {data.icon}
+                </div>
+              );
             })}
           </div>
         </div>
