@@ -4,6 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { ProjectFilter } from "../enums/ProjectFilter";
 import FilterButton from "../components/FilterButton";
 import ProjectVideo from "../components/ProjectVideo";
+import { BsPlayFill } from "react-icons/bs";
 
 function Projects() {
   const [filter, setFilter] = useState<ProjectFilter>(ProjectFilter.All);
@@ -64,7 +65,7 @@ function Projects() {
                 {
                   return (
                     (filter === ProjectFilter.All ||
-                      data.filter === filter) && (
+                      data.filter.includes(filter)) && (
                       <div
                         key={index}
                         className="flex flex-col justify-center w-full gap-1 transition-all h-72 hover:scale-[1.02]"
@@ -78,6 +79,15 @@ function Projects() {
                               className="text-lg cursor-pointer"
                             >
                               <AiFillGithub />
+                            </a>
+                          )}
+                          {data.liveDemo && (
+                            <a
+                              target="_blank"
+                              href={data.liveDemo}
+                              className="text-2xl cursor-pointer"
+                            >
+                              <BsPlayFill />
                             </a>
                           )}
                         </div>

@@ -4,5 +4,7 @@ export default interface IProjectData {
   title: string;
   youtubeId?: string;
   githubLink?: string;
-  filter: ProjectFilter;
+  filter: ProjectFilter[];
+  liveDemo?: string;
+  image?: string;
 }
