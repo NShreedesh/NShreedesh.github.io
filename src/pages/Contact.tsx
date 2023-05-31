@@ -11,7 +11,7 @@ function Contact() {
   function onFormSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     window.open(
-      `mailto:${mailTo.email}?subject=Contact From Portfolio&body=${mailTo.message}`
+      `mailto:nshreedesh@gmail.com?subject=Contact From Portfolio&body=Hi I am ${mailTo.name}.Email: ${mailTo.email} ${mailTo.message}`
     );
   }
 
