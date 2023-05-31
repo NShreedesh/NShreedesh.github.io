@@ -39,7 +39,7 @@ function ProjectVideo({
                 loading="lazy"
                 src={`https://img.youtube.com/vi/${data.youtubeId}/0.jpg`}
                 alt="Project Image"
-                className="object-contain w-full h-full bg-black"
+                className="object-cover w-full h-full bg-black"
               />
               <div className="absolute text-6xl text-red-700 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
                 <AiFillYoutube />
@@ -48,7 +48,11 @@ function ProjectVideo({
           )}
         </div>
       ) : (
-        <img src={data.image} className="w-full h-full" alt="game image"></img>
+        <img
+          src={data.image}
+          className="object-cover w-full h-full"
+          alt="game image"
+        ></img>
       )}
     </div>
   );
