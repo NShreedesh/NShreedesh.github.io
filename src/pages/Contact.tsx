@@ -8,6 +8,13 @@ function Contact() {
     message: "",
   });
 
+  function onFormSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    window.open(
+      `mailto:${mailTo.email}?subject=Contact From Portfolio&body=${mailTo.message}`
+    );
+  }
+
   return (
     <div className="flex w-full justify-center min-h-screen bg-light xl:text-start dark:bg-dark [transition:background-color_.3s,color_.3s] ">
       <div className="flex flex-col w-full gap-10 px-5 pt-24 pb-10 xl:max-w-4xl animate-page xl:px-0 xl:ml-80">
@@ -28,8 +35,7 @@ function Contact() {
 
               <form
                 className="flex flex-col w-full gap-8"
-                action={`mailto:${mailTo.email}?subject=Contact From Portfolio&body=${mailTo.message}`}
-                method="POST"
+                onSubmit={(e) => onFormSubmit(e)}
               >
                 <input
                   type="text"
