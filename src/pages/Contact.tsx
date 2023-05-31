@@ -11,7 +11,9 @@ function Contact() {
   function onFormSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     window.open(
-      `mailto:nshreedesh@gmail.com?subject=Contact From Portfolio&body=Hi I am ${mailTo.name}.Email: ${mailTo.email} ${mailTo.message}`
+      `mailto:nshreedesh@gmail.com?subject=Contact From Portfolio&body=${encodeURIComponent(
+        `Hi I am ${mailTo.name}.\nEmail: ${mailTo.email}\n${mailTo.message}`
+      )} `
     );
   }
 
@@ -36,6 +38,7 @@ function Contact() {
               <form
                 className="flex flex-col w-full gap-8"
                 onSubmit={(e) => onFormSubmit(e)}
+                encType="text/html"
               >
                 <input
                   type="text"
