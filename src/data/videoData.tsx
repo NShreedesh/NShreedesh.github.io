@@ -9,7 +9,7 @@ export const projectsData: IProjectData[] = [
     filter: [ProjectFilter.Game],
   },
   {
-    title: "Fps",
+    title: "Fps (In Progress)",
     youtubeId: "5h9Ax2-Qty8",
     filter: [ProjectFilter.Game],
   },
