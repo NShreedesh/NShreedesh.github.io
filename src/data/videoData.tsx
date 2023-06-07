@@ -9,6 +9,11 @@ export const projectsData: IProjectData[] = [
     filter: [ProjectFilter.Game],
   },
   {
+    title: "Fps",
+    youtubeId: "5h9Ax2-Qty8",
+    filter: [ProjectFilter.Game],
+  },
+  {
     title: "Angry Bird",
     youtubeId: "Qqxb7jjwIRQ",
     githubLink: "https://github.com/NShreedesh/Angry-Bird",
