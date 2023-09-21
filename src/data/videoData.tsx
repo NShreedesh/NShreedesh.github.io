@@ -20,6 +20,12 @@ export const projectsData: IProjectData[] = [
     filter: [ProjectFilter.Game],
   },
   {
+    title: "Duck Hunt",
+    youtubeId: "41-j3HsJGVg",
+    githubLink: "https://youtu.be/41-j3HsJGVg",
+    filter: [ProjectFilter.Game],
+  },
+  {
     title: "Helix Jump",
     youtubeId: "GrI_KWFknnE",
     githubLink: "https://github.com/NShreedesh/Helix-Jump",
