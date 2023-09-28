@@ -10,7 +10,7 @@ export const projectsData: IProjectData[] = [
   },
   {
     title: "Battle Force (In Progress)",
-    youtubeId: "MsSfkYzzFg8",
+    youtubeId: "UGTaR5CEBgM",
     filter: [ProjectFilter.Game],
   },
   {
