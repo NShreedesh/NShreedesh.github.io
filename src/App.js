@@ -58,14 +58,13 @@ const contentData = {
       "Featured Projects:\n1. Stellar Odyssey (2023)\n2. Neon Retro (2022)\n3. Quantum Shift (2021)",
     items: [
       {
-        title: "Stellar Odyssey",
-        year: 2023,
-        description: "Open-world space exploration RPG with procedural planets",
-        tech: ["Unity", "HDRP", "C#", "Procedural Generation"],
+        title: "Teenpatti",
+        year: 2024,
+        description: "Multi-Player game with realtime socket connection",
+        tech: ["Unity", "URP", "C#", "Socket"],
         details:
-          "Developed core gameplay systems including planet generation, space flight mechanics, and resource management. Implemented custom shaders for atmospheric effects and optimized rendering for large-scale environments.",
+          "Developed core gameplay systems including socket connecttions, UI, and resource management. Implemented socket IO for fluent connections and api for user data",
         demoUrl: "https://demo.stellarodyssey.com",
-        sourceUrl: "https://github.com/codewizard/stellar-odyssey",
       },
       {
         title: "Neon Retro",
@@ -282,14 +281,16 @@ function Portfolio() {
                     >
                       View Demo
                     </a>
-                    <a
-                      href={project.sourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3 py-1 border border-green-400 font-bold hover:bg-green-400/20 transition-colors text-sm"
-                    >
-                      Source Code
-                    </a>
+                    {project.sourceUrl && (
+                      <a
+                        href={project.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 border border-green-400 font-bold hover:bg-green-400/20 transition-colors text-sm"
+                      >
+                        Source Code
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}
