@@ -122,7 +122,7 @@ function Portfolio() {
 
   // Focus input and scroll to bottom on updates
   useEffect(() => {
-    inputRef.current.focus();
+    // inputRef.current.focus();
     outputEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [output, activeTab]);
 
@@ -175,7 +175,7 @@ function Portfolio() {
             </h2>
             <div className="space-y-4">
               <div className="flex items-start gap-4">
-                <div className="border border-green-400 w-24 h-24 flex items-center justify-center">
+                <div className="border border-green-400 w-24 h-24 aspect-square flex items-center justify-center">
                   <span className="text-3xl">SN</span>
                 </div>
                 <div>
@@ -387,7 +387,9 @@ function Portfolio() {
     >
       {/* Terminal Header */}
       <div className="flex justify-between items-center mb-2 border-b border-green-400 pb-2">
-        <h1 className="font-bold">terminal-portfolio v1.0.0</h1>
+        <h1 className="font-bold hidden sm:block ">
+          terminal-portfolio v1.0.0
+        </h1>
         <div className="flex space-x-1">
           {Object.keys(contentData).map((tab) => (
             <button
