@@ -23,7 +23,7 @@ const contentData = {
   skills: {
     title: "Technical Skills",
     summary:
-      "Core Skills:\n• Unity3D (Expert)\n• C# (Advanced)\n• Game Physics\n• AI Programming\n• Shader Development",
+      "Core Skills:\n• Unity3D (Expert)\n• C# (Advanced)\n• Game Physics\n• Multiplayer Networking\n• Optimization and Profiling",
     categories: [
       {
         name: "Game Development",
@@ -99,33 +99,23 @@ const contentData = {
       "Featured Projects:\n1. Stellar Odyssey (2023)\n2. Neon Retro (2022)\n3. Quantum Shift (2021)",
     items: [
       {
-        title: "Teenpatti",
+        title: "Sports Tactix",
         year: 2024,
-        description: "Multi-Player game with realtime socket connection",
-        tech: ["Unity", "URP", "C#", "Socket"],
-        details:
-          "Developed core gameplay systems including socket connecttions, UI, and resource management. Implemented socket IO for fluent connections and api for user data",
-        demoUrl: "https://demo.stellarodyssey.com",
-      },
-      {
-        title: "Neon Retro",
-        year: 2022,
-        description: "Retro-style platformer with modern lighting effects",
+        description: "Frame-by-Frame Tactical Simulation | Unity",
         tech: ["Unity", "Shader Graph", "2D Physics"],
         details:
-          "Created custom 2D lighting system using Shader Graph. Designed and implemented character movement physics with precise controls. Developed tile-based level editor for designers.",
-        demoUrl: "https://play.neonretro.game",
-        sourceUrl: "https://github.com/codewizard/neon-retro",
+          "Developed a frame-by-frame tactical simulation system in Unity designed for strategic sports gameplay. This project involved creating precise player movement paths and ball trajectories, along with implementing event-driven animations to visualize each tactical frame. The system enabled users to design, simulate, and analyze plays with high accuracy, making it ideal for coaching tools and sports strategy visualization.",
+        demoUrl: "https://www.youtube.com/watch?v=B8-RG6iusDQ",
       },
       {
-        title: "Quantum Shift",
-        year: 2021,
-        description: "Puzzle game with dimension-shifting mechanics",
-        tech: ["Unity", "C#", "Custom Physics"],
+        title: "Teenpatti",
+        year: 2023,
+        description:
+          "Real-Time Multiplayer Integration | Photon Fusion & Custom Sockets",
+        tech: ["Unity", "URP", "C#", "Socket"],
         details:
-          "Implemented innovative dimension-swapping gameplay mechanic. Created custom physics interactions between dimensions. Designed puzzle progression system with increasing complexity.",
-        demoUrl: "https://quantumshift.demo",
-        sourceUrl: "https://github.com/codewizard/quantum-shift",
+          "Worked on the development of real-time multiplayer casino games using Photon Fusion and custom socket programming. I was responsible for integrating robust multiplayer features, managing data synchronization, and ensuring consistent state updates across all clients. The combination of Photon Fusion’s capabilities and tailored socket solutions allowed for low-latency, reliable gameplay across a range of casino game types.",
+        demoUrl: "https://www.youtube.com/watch?v=U-G2imsIhS4",
       },
     ],
   },
