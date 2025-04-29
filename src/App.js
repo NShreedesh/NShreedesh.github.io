@@ -52,6 +52,47 @@ const contentData = {
       },
     ],
   },
+  experience: {
+    title: "Professional Experience",
+    summary:
+      "Work History:\n• Hiup Solutions - Senior Game Developer (2024-Present)\n• Veda Studios - Game Developer (2022-2024)",
+    positions: [
+      {
+        company: "Hiup Solutions",
+        role: "Senior Game Developer",
+        duration: "2024 - Present",
+        location: "Kathmandu, Nepal",
+        responsibilities: [
+          "Developed frame-by-frame tactics simulation in Unity for strategic gameplay",
+          "Created player paths, ball trajectories, and event-driven animations",
+          "Built tools for saving, editing, and replaying tactical sequences",
+          "Integrated Cinemachine for dynamic camera views of player actions",
+        ],
+        technologies: ["Unity", "C#", "VR", "URP", "Addressables"],
+      },
+      {
+        company: "Veda Studios",
+        role: "Unity Developer",
+        duration: "2022 - 2024",
+        location: "Kathmandu, Nepal",
+        responsibilities: [
+          "Integrated Photon Fusion and custom socket programming for real-time multiplayer",
+          "Developed server-client architecture using Photon Fusion for matchmaking and sockets for direct communication",
+          "Managed data sync and state updates across clients with Photon Fusion and sockets",
+        ],
+        technologies: ["Unity", "C#", "Socket", "Asset Bundles"],
+      },
+    ],
+    achievements: [
+      "Designed and implemented engaging gameplay mechanics for multiple genres including action, puzzle, and sports",
+      "Developed a robust socket-based multiplayer framework supporting real-time synchronization and matchmaking",
+      "Reduced memory usage and draw calls by optimizing asset loading and scene structure.",
+      "Designed and implemented dynamic UI systems responsive across resolutions and aspect ratios",
+      "Built reward systems triggered by ad views and player achievements",
+      "Integrated Unity Ads, IAP, Firebase Analytics, and remote config systems",
+      "Created animated UI transitions using DOTween and Leantween",
+    ],
+  },
   projects: {
     title: "Featured Projects",
     summary:
@@ -134,6 +175,7 @@ function Portfolio() {
         "Available commands:\nabout - Bio information\nskills - Technical abilities\nprojects - My work\nexperience - Work history\ncontact - Get in touch\nclear - Reset terminal";
     } else if (cmd === "clear") {
       setOutput([]);
+      setCommand("");
       return;
     } else if (contentData[cmd]) {
       response = contentData[cmd].summary;
@@ -241,6 +283,64 @@ function Portfolio() {
                   </ul>
                 </div>
               ))}
+            </div>
+          </div>
+        );
+      case "experience":
+        return (
+          <div>
+            <h2 className="font-bold text-xl mb-6">
+              {contentData.experience.title}
+            </h2>
+            <div className="space-y-8">
+              {contentData.experience.positions.map((position, index) => (
+                <div
+                  key={index}
+                  className="border border-green-400 p-4 rounded-lg"
+                >
+                  <div className="flex flex-col md:flex-row md:justify-between md:items-baseline mb-3">
+                    <h3 className="font-bold text-lg">
+                      {position.role} @ {position.company}
+                    </h3>
+                    <div className="text-green-300">
+                      {position.duration} • {position.location}
+                    </div>
+                  </div>
+                  <div className="mb-4">
+                    <h4 className="font-bold mb-2">Responsibilities:</h4>
+                    <ul className="space-y-2">
+                      {position.responsibilities.map((item, i) => (
+                        <li key={i}>• {item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-2">Technologies:</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {position.technologies.map((tech, i) => (
+                        <span
+                          key={i}
+                          className="text-xs border border-green-400 px-2 py-1 rounded-full"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+
+              <div className="border border-green-400 p-4 rounded-lg">
+                <h3 className="font-bold text-lg mb-3">Key Achievements</h3>
+                <ul className="space-y-3">
+                  {contentData.experience.achievements.map((achievement, i) => (
+                    <li key={i} className="flex items-start">
+                      <span className="text-green-400 mr-2">▹</span>
+                      {achievement}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         );
