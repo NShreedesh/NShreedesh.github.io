@@ -995,10 +995,19 @@ main {
 }
 
 .project-list {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 30px;
   margin-bottom: 10px;
+}
+
+.project-summary {
+  padding: 0px 10px;
+  color: var(--light-gray);
+}
+
+.project-summary li {
+  list-style: square;
 }
 
 .project-item {
